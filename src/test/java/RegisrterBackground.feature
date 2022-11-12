@@ -10,7 +10,9 @@ Feature: Search Form Test
     When click on create an Account button
     Then verify to success for register "<VerifyName>"
     Examples:
-      | hasan.sabah@enuygun.com | 123123 | hasansabah |
+      | Email | Password | VerifyName |
+      | hasan.sabah@enuygun.com   | 123123 | hasansabah   |
       | hasan.enuygun@enuygun.com | 123123 | hasanenuygun |
+
 
 
