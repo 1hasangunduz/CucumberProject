@@ -29,4 +29,9 @@ public abstract class AbstractClass {
      select.selectByVisibleText(element);
     }
 
+    public void selectElementFromDropdown(WebElement dropdown,String element){
+        Select slc = new Select(dropdown);
+        slc.selectByVisibleText(element);
+    }
+
 }

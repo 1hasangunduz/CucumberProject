@@ -46,7 +46,12 @@
             <version>4.5.3</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.0</version>
+        </dependency>
 
     </dependencies>
 </project>
