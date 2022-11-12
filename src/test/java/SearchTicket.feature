@@ -1,3 +1,5 @@
+@SmokeTest
+
 Feature: Search Form Test
 
   Scenario: Go to website and test Search Form Flight

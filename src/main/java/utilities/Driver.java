@@ -1,6 +1,5 @@
 package utilities;
 
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeStep;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,6 @@ public class Driver {
         return driver;
     }
 
-    @AfterAll
     public static void closeDriver() {
         if (driver != null) {
             driver.quit();
