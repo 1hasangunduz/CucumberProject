@@ -18,8 +18,12 @@ public class SelectRoute_Steps {
 
     @Given("navigate to Website")
     public void navigate_to_website() throws Throwable {
-       lib.navigateToUrl("https://www.enuygun.com/ucak-bileti/");
+        driver = Driver.getDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.enuygun.com/ucak-bileti/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
+
 
     @Given("click on origin text box")
     public void click_on_origin_text_box() throws Throwable {

@@ -1,16 +1,16 @@
-Feature: Register Test
+Feature: Search Form Test
 
-  Scenario Outline: Create an Account
-
+  Background:
     Given Navigate to Website
     And click register button
+
+  Scenario Outline: Create account
     And type email "<Email>"
     And type password "<Password>"
     When click on create an Account button
     Then verify to success for register "<VerifyName>"
     Examples:
-      | Email | Password | VerifyName |
-
-      | hasan.kemal2@enuygun.com | 1231234 | hasankemal2 |
+      | hasan.sabah@enuygun.com | 123123 | hasansabah |
+      | hasan.enuygun@enuygun.com | 123123 | hasanenuygun |
 
 

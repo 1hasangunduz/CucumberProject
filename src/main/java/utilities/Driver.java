@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Driver {
     private static WebDriver driver;
-@BeforeStep
+
+    @BeforeStep
     public static WebDriver getDriver() {
         if (driver == null) {
             System.setProperty("webdriver.chrome.driver", "");
@@ -19,10 +20,10 @@ public class Driver {
     }
 
     @AfterAll
-    public static void closeDriver(){
-        if(driver!=null){
+    public static void closeDriver() {
+        if (driver != null) {
             driver.quit();
-            driver=null;
+            driver = null;
         }
     }
 
