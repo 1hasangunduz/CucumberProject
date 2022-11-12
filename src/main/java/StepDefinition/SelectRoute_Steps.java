@@ -18,11 +18,7 @@ public class SelectRoute_Steps {
 
     @Given("navigate to Website")
     public void navigate_to_website() throws Throwable {
-        driver = Driver.getDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.wingie.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
+       lib.navigateToUrl("https://www.enuygun.com/ucak-bileti/");
     }
 
     @Given("click on origin text box")
@@ -55,8 +51,9 @@ public class SelectRoute_Steps {
 
     @Then("verify to success message")
     public void verify_to_success_message() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-
+        lib.controlBookPage();
 
     }
+
+
 }

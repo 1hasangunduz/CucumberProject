@@ -1,9 +1,7 @@
 package utilities;
 
 import io.cucumber.java.AfterAll;
-import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
-import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
